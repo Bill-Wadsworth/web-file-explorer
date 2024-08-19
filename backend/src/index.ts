@@ -21,5 +21,4 @@ app.get("/api/files/:path(([a-zA-Z]+)*)", (request, response) => {
 
 app.listen(PORT, () => {
   console.log("running on port: ", PORT);
-  console.log("HALL0");
 });
