@@ -1,10 +1,7 @@
-import { useEffect, useState } from 'react'
 import './App.css'
-import DocumentView from './DocumentView'
 import FolderContainer from './FolderContainer'
 import Document from './interfaces/DocumentInterface'
 import Folder from './interfaces/FolderInterface'
-import fetchFiles from './fetchFiles'
 
 function App() {
 
@@ -24,7 +21,7 @@ function App() {
   return (
     <>
       <div>
-        <FolderContainer folder={testFolder} isRoot={true} depth={0} />
+        <FolderContainer folder={testFolder} isRoot={true} />
       </div> 
     </>
   )

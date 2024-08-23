@@ -1,8 +1,9 @@
 import Document from "./interfaces/DocumentInterface";
+import "./FileView.css";
 
 const DocumentView = ({ document }: { document: Document }) => {
     return (
-        <div>
+        <div className="view">
             {document.name}
         </div>
     )

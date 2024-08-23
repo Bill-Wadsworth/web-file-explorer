@@ -1,6 +1,8 @@
-const FolderView = ({ folderName }: {folderName: string}) => {
+import "./FileView.css";
+
+const FolderView = ({ folderName, collapeFunction }: {folderName: string, collapeFunction: () => void}) => {
     return (
-        <div>
+        <div className="view" onClick={collapeFunction}>
             {folderName}
         </div>
     )

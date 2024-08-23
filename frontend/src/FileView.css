@@ -1,0 +1,24 @@
+.view {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: white;
+    text-align: left;
+    font-size: large;
+    font-weight: 400;
+    color: steelblue;
+    min-width: 400px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.bar {
+    margin-left: 10px;
+    background-color: white;
+    min-width: 3px;
+    border-radius: 100px;
+}
