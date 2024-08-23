@@ -4,8 +4,14 @@ import Folder from "./FolderInterface";
 
 const STORAGEPATH = "./storage";
 
-const getFileJson = (path = ""): (Folder|Document)[] => {
-  return generateTotalFileJson(path);
+const getFileJson = (path = ""): Folder => {
+  console.log("Call!");
+  return {
+    name: "/",
+    type: "directory",
+    path: "/",
+    children: generateTotalFileJson(path)
+  }
 };
 
 export default getFileJson;
